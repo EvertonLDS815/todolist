@@ -14,7 +14,7 @@ app.use(routes);
 
 mongoose.set('strictQuery', true);
 
-const port = process.env.PORT | 450;
+const port = process.env.PORT || 450;
 
 mongoose.connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
