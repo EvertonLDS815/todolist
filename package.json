@@ -1,0 +1,26 @@
+{
+  "name": "my-list",
+  "version": "1.0.0",
+  "description": "Minha todo list",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EvertonLDS815/to-do-list-react.git"
+  },
+  "author": "Everton Lino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EvertonLDS815/to-do-list-react/issues"
+  },
+  "homepage": "https://github.com/EvertonLDS815/to-do-list-react#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.8.1"
+  }
+}
