@@ -11,21 +11,21 @@ function App() {
   const [isUpdating, setIsUpdating] = useState("");
 
   useEffect(() => {
-    axios.get("http://localhost:10000/get-todo")
+    axios.get("https://todo-list-black.onrender.com/get-todo")
     .then((res) => setTodo(res.data))
     .catch((err) => console.log(err));
   })
 
   const addUpdate = () => {
     if(isUpdating === "") {
-      axios.post("http://localhost:10000/save-todo", {text})
+      axios.post("https://todo-list-black.onrender.com/save-todo", {text})
       .then((res) => {
         console.log(res.data)
         setText("");
       })
       .catch((err) => console.log(err));
     } else {
-      axios.post("http://localhost:10000/update-todo", {_id: isUpdating, text})
+      axios.post("https://todo-list-black.onrender.com/update-todo", {_id: isUpdating, text})
       .then((res) => {
         console.log(res.data)
         setText("");
@@ -36,7 +36,7 @@ function App() {
   }
 
   const deleteToDo = (_id) => {
-    axios.post("http://localhost:10000/delete-todo", {_id})
+    axios.post("https://todo-list-black.onrender.com/delete-todo", {_id})
       .then((res) => {
         console.log(res.data);
       })
