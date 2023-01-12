@@ -9,7 +9,7 @@ const routes = require("./routes/ToDoRoutes");
 
 const app = express();
 
-app.set("view engine", "html");
+app.set("view engine", "jsx");
 app.use(express.static(path.join(__dirname, "./client")));
 app.use(express.json());
 app.use(cors());
