@@ -11,6 +11,7 @@ module.exports.saveToDo = async (req, res) => {
   ToDoModel.create({ text })
     .then(() => res.status(201).send("Adicionado com sucesso..."))
     .catch((err) => console.log(err));
+  res.send({text})
 };
 
 module.exports.deleteToDo = (req, res) => {
